@@ -16,6 +16,14 @@ public class Demo1 {
             count++;
         }
         System.out.println("Count of persons: " + count);
+
+        System.out.println("now using the functional programming style to count persons");
+        long functionalCount = persons.stream().count();
+        System.out.println("Count of persons using functional programming: " + functionalCount);
+        System.out.println("displaying persons with age greater than 25 in the list");
+        persons.stream().
+                filter(person -> person.age>25)
+                .forEach(System.out::println);
     }
 
     static class Person {

@@ -23,7 +23,13 @@ public class Demo2 {
         System.out.println("now implemet Fucntion in java fcntional programing");
         System.out.println("add 1 by 1");
         int a=1;
-        Function<Integer,Integer> result=n->n+1;
-        System.out.println("result of function is: " + result.apply(a));
+        Function<Integer,Integer> addby1=n->n+1;
+        System.out.println("result of function is: " + addby1.apply(a));
+        Predicate<Integer> tovote=n-> n>=18;
+        System.out.println("person with age 19 is rligible to vote: " + tovote.test(19));
+        System.out.println("add 1 to value 1 and mutiply by 3");
+        Function<Integer,Integer> multiplyby3 = n -> (n) * 3;
+        Function<Integer,Integer> add1multiply3 = addby1.andThen(multiplyby3);
+        System.out.println("for 2 result will be 9,acutial: "+ add1multiply3.apply(2));
     }
 }

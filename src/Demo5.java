@@ -12,5 +12,6 @@ import java.util.function.BiConsumer;
 
                 showphno.accept(customer, true);  // Shows phone number
                 showphno.accept(customer, false); // Shows asterisks
+
             }
         }

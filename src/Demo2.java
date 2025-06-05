@@ -31,5 +31,7 @@ public class Demo2 {
         Function<Integer,Integer> multiplyby3 = n -> (n) * 3;
         Function<Integer,Integer> add1multiply3 = addby1.andThen(multiplyby3);
         System.out.println("for 2 result will be 9,acutial: "+ add1multiply3.apply(2));
+        int x=addby1.andThen(multiplyby3).apply(8);
+        System.out.println("for 8 result will be 27,actual: " + x);
     }
 }

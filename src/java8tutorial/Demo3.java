@@ -11,7 +11,7 @@ public class Demo3 {
         System.out.println("Implementing functional programming in Java");
         System.out.println("Using a calulate interface with add method");
         calculate addition = (a, b) -> (a + b);
-        print(addition, 5, 10);
+        print(addition,5, 10);
         print(addition, 20, 30);
     }
 

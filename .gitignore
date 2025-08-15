@@ -27,3 +27,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+*.mp4
+*.wav
+*.mp3
+*.m4a

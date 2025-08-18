@@ -21,6 +21,5 @@ public class SupplierDemo {
         Supplier<LocalDateTime> supplier= ()-> LocalDateTime.now();
         System.out.println(supplier.get());
 
-
     }
 }

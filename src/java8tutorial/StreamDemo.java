@@ -27,5 +27,14 @@ public class StreamDemo {
         c1.stream()
                 .sorted(Comparator.comparingInt(s -> s.charAt(1))) // Just add .reversed() here
                 .forEach(System.out::println);
+
+        System.out.println("find the first even number in the list");
+        List<Integer> numbers = Arrays.asList(1, 3, 5, 4, 2, 6);
+        numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .findFirst()
+                .ifPresent(n -> System.out.println("First even number: " + n));
+
+
     }
 }
